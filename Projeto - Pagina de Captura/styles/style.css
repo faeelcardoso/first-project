@@ -1,0 +1,135 @@
+* { /* Zerando margem e padding de todos os elementos */
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+header {
+  background-color: #48C5CE;
+  text-align: center;
+  padding: 10px;
+  color: white; 
+}
+.container {
+  max-width: 1500px;
+  margin: auto; /* Para jogar todo o conteúdo para o meio */
+}
+.title {
+  margin: 0;
+  font-size: 26px;
+}
+.subscribe {
+  background-image: url("../assets/people.jpg");
+  overflow: hidden;
+  background-size: cover;
+}
+.formContainer {
+  background-color: #FFFFFF99;
+  max-width: 230px;
+  float: right;
+  padding: 20px;
+  margin: 20px;
+}
+h2 {
+  font-weight: bold;
+}
+.formText {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+input, select {
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box; /* Pra ficar tudo no mesmo tamanho */
+  padding: 10px;
+  border: none;
+}
+select {
+  /*Appereance: Com essa propriedade eu consigo tirar o icone de seta do select padrão e adicionar o meu */
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: nome;
+  /* Como essa é uma propriedade experimental, coloquei as 3 para n dar erro menos navegadores possíveis */
+
+  /* Adicionando a seta que eu quero */
+  background-image: url("../assets/arrow.jpg");
+  background-repeat: no-repeat; /* Pra n aparecer 50 setas hahah */
+  background-position: calc(100% - 10px) center; /* posição X, 100% - 10px e posição Y, no centro. */
+}
+input[type="submit"] {
+  color: white;
+  background-color: #48C5CE;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  border: 1px solid #0b6369;
+  cursor: pointer;
+}
+.about {
+  padding: 30px;
+  background-color: #202121;
+  text-align: center;
+}
+img {
+  width: 160px;
+}
+#palestrante {
+  font-size: 20px;
+}
+.aboutContainer {
+  color: white;
+  display: inline-block;
+  width: 30%;
+  margin-left: 40px;
+  text-align: left;
+}
+.aboutContainer h2 {
+  font-size: 24px;
+}
+footer {
+  color: white;
+  clear: left;
+  text-align: center;
+}
+h3 {
+  font-size: 17px;
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: blue;
+}
+#coffee {
+  display: inline-block;
+}
+#heart {
+  display: inline-block;
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width: 800px) {
+  img {
+    position: relative;
+    bottom: 140px;
+  }
+  .formContainer {
+    float: none;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  img {
+    position: static;
+    float: left;
+  }
+  .aboutContainer {
+    margin-left: 0;
+  }
+  .aboutContainer p {
+    font-size: 13px;
+  }
+}
