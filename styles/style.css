@@ -132,12 +132,12 @@ a:hover {
   }
   .aboutContainer h2 {
     text-align: center;
-    width: 160px;
+    min-width: 160px;
     margin-left: 32px;
   }
   .aboutContainer p {
     font-size: 13px;
-    width: 200px;
+    min-width: 200px;
     text-align: left;
     margin-left: 23px;
   }
