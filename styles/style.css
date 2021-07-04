@@ -124,12 +124,21 @@ a:hover {
 @media screen and (max-width: 500px) {
   img {
     position: static;
-    float: left;
+    margin: auto;
   }
   .aboutContainer {
-    margin-left: 0;
+    display: block;
+    padding: 5px;
+  }
+  .aboutContainer h2 {
+    text-align: center;
+    width: 160px;
+    margin-left: 32px;
   }
   .aboutContainer p {
     font-size: 13px;
+    width: 200px;
+    text-align: left;
+    margin-left: 23px;
   }
 }
