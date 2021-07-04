@@ -64,7 +64,7 @@ input[type="submit"] {
   font-weight: bold;
 }
 input[type="submit"]:hover {
-  border: 1px solid #0b6369;
+  background-color:black;
   cursor: pointer;
 }
 .about {
@@ -91,17 +91,17 @@ img {
 footer {
   color: white;
   clear: left;
-  text-align: center;
 }
 h3 {
   font-size: 17px;
   padding: 5px;
+  display: inline-block;
 }
-a {
+#surprise {
   text-decoration: none;
   color: white;
 }
-a:hover {
+#surprise:hover {
   color: blue;
 }
 #coffee {
@@ -109,6 +109,10 @@ a:hover {
 }
 #heart {
   display: inline-block;
+}
+#insta, #git {
+  width: 24px;
+  float: right;
 }
 /*MEDIA QUERIES*/
 @media screen and (max-width: 800px) {
@@ -140,5 +144,8 @@ a:hover {
     min-width: 200px;
     text-align: left;
     margin-left: 23px;
+  }
+  footer h3 {
+    font-size: 14px;
   }
 }
